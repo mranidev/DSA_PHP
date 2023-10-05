@@ -19,7 +19,7 @@ Understanding data structures and algorithms is crucial for writing efficient an
 
 In this section, you'll find implementations and explanations of various data structures, including but not limited to:
 
-- Arrays
+- [Arrays](https://github.com/mranidev/DSA_PHP/blob/main/ARRAYS.md)
 - Linked Lists
 - Stacks
 - Queues
