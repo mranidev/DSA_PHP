@@ -60,7 +60,7 @@ You can use the array_pop() function to remove the last element from an array:
 $lastElement = array_pop($numbers); // Removes and returns the last element
 ```
 
-## Remove an Element at a Specific Index:
+## Remove an Element at a Specific Index
 
 You can use the unset() function to remove an element at a specific index:
 ```php
@@ -68,10 +68,5 @@ $indexToRemove = 2;
 unset($numbers[$indexToRemove]); // Removes the element at index 2
 ```
 
-## Adding Elements - Add to End
 
-You can add an element to the end of an array using the [] operator:
-```php
-$numbers[] = 6; // Adds 6 to the end of the $numbers array
-```
 
