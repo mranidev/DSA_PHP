@@ -1,6 +1,6 @@
 # Arrays
 
-Welcome to the "Arrays" folder in this repository! This folder contains code examples and information related to working with arrays in PHP. Whether you're new to PHP programming or looking for specific array-related operations, you'll find useful resources here.
+This folder contains code examples and information related to working with arrays in PHP.
 
 ## Contents
 
