@@ -71,8 +71,8 @@ unset($numbers[$indexToRemove]); // Removes the element at index 2
 
 For further learning and reference, consider exploring the following external resources:
 
-- [GeeksforGeeks Linked List Tutorials](https://www.geeksforgeeks.org/data-structures/arrays/)
-- [Wikipedia - Linked List](https://en.wikipedia.org/wiki/arrays)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/data-structures/arrays/)
+- [Wikipedia](https://en.wikipedia.org/wiki/arrays)
 
 Feel free to dive into the code examples and explanations provided in this folder to enhance your understanding of linked lists. You can also contribute to this repository by adding more linked list-related content or improvements.
 
