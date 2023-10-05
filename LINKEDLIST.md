@@ -17,3 +17,7 @@ Welcome to the "Linked Lists" folder in this repository! This folder contains co
 ## Introduction to Linked Lists
 
 A linked list is a fundamental data structure consisting of nodes, each containing data and a reference to the next (and possibly previous) node. This folder provides an introduction to various types of linked lists and their usage.
+
+![Linked List](https://simplesnippets.tech/wp-content/uploads/2019/06/linked-list-data-structure-block-diagram1.png)
+![Linked List](./images/linkedlist.png)
+![Linked List](./images/linkedlist.png)
