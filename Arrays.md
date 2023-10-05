@@ -22,3 +22,10 @@ To create an array in PHP, you can use square brackets `[]` or the `array()` con
 $myArray = []; // Empty array
 $numbers = [1, 2, 3, 4, 5]; // Array with values
 ```
+
+## Adding Elements - Add to End
+
+You can add an element to the end of an array using the [] operator:
+```php
+$numbers[] = 6; // Adds 6 to the end of the $numbers array
+```
