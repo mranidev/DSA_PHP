@@ -23,9 +23,54 @@ $myArray = []; // Empty array
 $numbers = [1, 2, 3, 4, 5]; // Array with values
 ```
 
+## Adding to End
+
+You can add an element to the end of an array using the [] operator:
+```php
+$numbers[] = 6; // Adds 6 to the end of the $numbers array
+```
+
+## Add to Beginning
+
+Use the array_unshift() function to add an element to the beginning of an array:
+```php
+array_unshift($numbers, 0); // Adds 0 to the beginning of the $numbers array
+```
+
+## Insert at Specific Index
+
+To insert an element at a specific index, you can use the array_splice() function:
+```php
+$index = 2;
+$elementToInsert = 7;
+array_splice($numbers, $index, 0, $elementToInsert); // Inserts 7 at index 2
+```
+
 ## Adding Elements - Add to End
 
 You can add an element to the end of an array using the [] operator:
 ```php
 $numbers[] = 6; // Adds 6 to the end of the $numbers array
 ```
+
+## Adding Elements - Add to End
+
+You can add an element to the end of an array using the [] operator:
+```php
+$numbers[] = 6; // Adds 6 to the end of the $numbers array
+```
+
+## Adding Elements - Add to End
+
+You can add an element to the end of an array using the [] operator:
+```php
+$numbers[] = 6; // Adds 6 to the end of the $numbers array
+```
+
+## Adding Elements - Add to End
+
+You can add an element to the end of an array using the [] operator:
+```php
+$numbers[] = 6; // Adds 6 to the end of the $numbers array
+```
+
