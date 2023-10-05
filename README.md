@@ -1,7 +1,5 @@
 # Data Structures &amp; Algorithms in PHP
 
-# Data Structures and Algorithms
-
 Welcome to my repository for Data Structures and Algorithms implementations for PHP learning resources. This repository is a collection of code examples, explanations, and notes that I've created while learning and practicing data structures and algorithms. Whether you're a beginner or an experienced developer looking to refresh your knowledge, I hope you find this repository helpful.
 
 ## Table of Contents
