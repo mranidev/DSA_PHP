@@ -46,25 +46,26 @@ $elementToInsert = 7;
 array_splice($numbers, $index, 0, $elementToInsert); // Inserts 7 at index 2
 ```
 
-## Adding Elements - Add to End
+## Remove the First Element from an Array
 
-You can add an element to the end of an array using the [] operator:
+You can use the array_shift() function to remove the first element from an array:
 ```php
-$numbers[] = 6; // Adds 6 to the end of the $numbers array
+$firstElement = array_shift($numbers); // Removes and returns the first element
 ```
 
-## Adding Elements - Add to End
+## Remove the Last Element from an Array
 
-You can add an element to the end of an array using the [] operator:
+You can use the array_pop() function to remove the last element from an array:
 ```php
-$numbers[] = 6; // Adds 6 to the end of the $numbers array
+$lastElement = array_pop($numbers); // Removes and returns the last element
 ```
 
-## Adding Elements - Add to End
+## Remove an Element at a Specific Index:
 
-You can add an element to the end of an array using the [] operator:
+You can use the unset() function to remove an element at a specific index:
 ```php
-$numbers[] = 6; // Adds 6 to the end of the $numbers array
+$indexToRemove = 2;
+unset($numbers[$indexToRemove]); // Removes the element at index 2
 ```
 
 ## Adding Elements - Add to End
