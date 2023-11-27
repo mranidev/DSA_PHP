@@ -135,6 +135,22 @@ When managing user data in a system, `asort($userData);` can help maintain alpha
 
 These use cases provide a glimpse into the practical applications of array operations. Experimenting with these scenarios will deepen your understanding of how arrays can be leveraged in PHP applications.
 
+## Error Handling and Edge Cases
+
+While working with arrays in PHP, it's crucial to consider error handling and edge cases to ensure the robustness of your code. Here are some key points to keep in mind:
+
+### Removing Elements from an Array
+
+When attempting to remove elements from an array, consider the following:
+
+#### Edge Case: Removing from an Empty Array
+
+If you try to remove an element from an empty array using functions like `array_shift()`, `array_pop()`, or `unset()`, it's important to handle this situation gracefully. Trying to remove an element from an empty array may result in warnings or errors.
+
+```php
+$emptyArray = [];
+$removedElement = array_shift($emptyArray); // $removedElement will be NULL
+```
 
 For further learning and reference, consider exploring the following external resources:
 
