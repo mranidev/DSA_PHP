@@ -20,6 +20,7 @@ To create an array in PHP, you can use square brackets `[]` or the `array()` con
 
 ```php
 $myArray = []; // Empty array
+$myArray = array(); // using array costructor
 $numbers = [1, 2, 3, 4, 5]; // Array with values
 ```
 
