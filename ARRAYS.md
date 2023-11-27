@@ -61,6 +61,15 @@ $lastElement = array_pop($numbers); // Removes and returns the last element
 ```
 
 ## Remove an Element at a Specific Index
+Always check whether the array is empty before attempting removal operations to avoid unexpected behavior.
+
+php
+
+if (!empty($emptyArray)) {
+    $removedElement = array_shift($emptyArray);
+} else {
+    echo "The array is empty. Cannot remove elements.";
+}
 
 You can use the unset() function to remove an element at a specific index:
 ```php
@@ -150,6 +159,17 @@ If you try to remove an element from an empty array using functions like `array_
 ```php
 $emptyArray = [];
 $removedElement = array_shift($emptyArray); // $removedElement will be NULL
+```
+
+Always check whether the array is empty before attempting removal operations to avoid unexpected behavior.
+
+```php
+
+if (!empty($emptyArray)) {
+    $removedElement = array_shift($emptyArray);
+} else {
+    echo "The array is empty. Cannot remove elements.";
+}
 ```
 
 For further learning and reference, consider exploring the following external resources:
