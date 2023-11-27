@@ -69,6 +69,33 @@ unset($numbers[$indexToRemove]); // Removes the element at index 2
 ```
 ## External Resources
 
+- **sort($array):** Sorts an array in ascending order.
+- **rsort($array):** Sorts an array in descending order.
+- **asort($array):** Sorts an associative array in ascending order, maintaining key-value associations.
+- **ksort($array):** Sorts an associative array by keys.
+- **arsort($array):** Sorts an associative array in descending order, maintaining key-value associations.
+- **krsort($array):** Sorts an associative array by keys in descending order.
+
+### Filtering Functions
+
+- **array_filter($array, $callback):** Filters elements of an array using a callback function.
+- **array_map($callback, $array):** Applies a callback function to each element of an array and returns the modified array.
+- **array_reduce($array, $callback, $initial):** Reduces an array to a single value using a callback function.
+
+### Manipulation Functions
+
+- **array_merge($array1, $array2):** Merges two or more arrays.
+- **array_slice($array, $offset, $length):** Returns a slice of an array.
+- **array_splice($array, $offset, $length, $replacement):** Removes a portion of the array and replaces it with something else.
+
+### Other Useful Functions
+
+- **count($array):** Returns the number of elements in an array.
+- **in_array($needle, $haystack):** Checks if a value exists in an array.
+- **array_search($needle, $haystack):** Searches an array for a given value and returns the corresponding key if successful.
+
+This is just a glimpse of the many array functions PHP offers. Exploring these functions will greatly enhance your ability to work with arrays effectively.
+
 For further learning and reference, consider exploring the following external resources:
 
 - [GeeksforGeeks](https://www.geeksforgeeks.org/data-structures/arrays/)
