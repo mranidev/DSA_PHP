@@ -92,7 +92,8 @@ $linkedList->insertAtBeginning(2);
 $linkedList->insertAtBeginning(1);
 $linkedList->insertAtEnd(4);
 $linkedList->insertAtEnd(5);
-$linkedList->display(); // Output: 1 2 3 4 5```
+$linkedList->display(); // Output: 1 2 3 4 5
+```
 
 ### Doubly Linked Lists:
 
