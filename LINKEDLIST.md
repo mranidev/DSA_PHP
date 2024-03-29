@@ -193,5 +193,77 @@ echo "\n";
 
 echo "Backward traversal: ";
 $doublyLinkedList->displayBackward(); // Output: 5 4 3 2 1
+```
+### Circular Linked Lists:
+
+Circular Linked Lists are a type of linked list where each node points to the next node in the sequence, and the last node points back to the first node, creating a circular structure. They consist of nodes, where each node contains a data element and a reference (or pointer) to the next node in the sequence.
+
+#### Structure:
+- Each node contains two components:
+  1. Data: The value or payload stored in the node.
+  2. Next: A reference (pointer) to the next node in the sequence.
+
+#### Common Operations:
+1. **Insertion**: Adding a new node to the list.
+2. **Deletion**: Removing a node from the list.
+3. **Traversal**: Iterating through the list to access or manipulate nodes.
+
+#### Example PHP Code:
+
+```php
+class Node {
+    public $data;
+    public $next;
+
+    public function __construct($data) {
+        $this->data = $data;
+        $this->next = null;
+    }
+}
+
+class CircularLinkedList {
+    public $head;
+
+    public function __construct() {
+        $this->head = null;
+    }
+
+    // Inserting a new node at the end of the list
+    public function insert($data) {
+        $newNode = new Node($data);
+        if ($this->head === null) {
+            $this->head = $newNode;
+            $newNode->next = $newNode; // Point to itself for circularity
+        } else {
+            $current = $this->head;
+            while ($current->next !== $this->head) {
+                $current = $current->next;
+            }
+            $current->next = $newNode;
+            $newNode->next = $this->head; // Point back to the head for circularity
+        }
+    }
+
+    // Traversing the circular list and printing its elements
+    public function display() {
+        if ($this->head === null) {
+            return;
+        }
+        $current = $this->head;
+        do {
+            echo $current->data . " ";
+            $current = $current->next;
+        } while ($current !== $this->head);
+    }
+}
+
+// Example usage:
+$circularLinkedList = new CircularLinkedList();
+$circularLinkedList->insert(1);
+$circularLinkedList->insert(2);
+$circularLinkedList->insert(3);
+
+$circularLinkedList->display(); // Output: 1 2 3
+
 
 
