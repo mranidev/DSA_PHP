@@ -92,5 +92,105 @@ $linkedList->insertAtBeginning(2);
 $linkedList->insertAtBeginning(1);
 $linkedList->insertAtEnd(4);
 $linkedList->insertAtEnd(5);
-$linkedList->display(); // Output: 1 2 3 4 5
+$linkedList->display(); // Output: 1 2 3 4 5```
+
+### Doubly Linked Lists:
+
+Doubly Linked Lists are a type of linked list where each node points to both the next and the previous nodes in the sequence. They consist of nodes, where each node contains a data element, a reference (or pointer) to the next node, and a reference (or pointer) to the previous node. This bidirectional linkage allows traversal in both forward and backward directions.
+
+#### Structure:
+- Each node contains three components:
+  1. Data: The value or payload stored in the node.
+  2. Next: A reference (pointer) to the next node in the sequence.
+  3. Previous: A reference (pointer) to the previous node in the sequence.
+
+#### Common Operations:
+1. **Insertion**: Adding a new node to the list.
+2. **Deletion**: Removing a node from the list.
+3. **Traversal**: Iterating through the list to access or manipulate nodes.
+
+#### Example PHP Code:
+
+```php
+class Node {
+    public $data;
+    public $next;
+    public $prev;
+
+    public function __construct($data) {
+        $this->data = $data;
+        $this->next = null;
+        $this->prev = null;
+    }
+}
+
+class DoublyLinkedList {
+    public $head;
+    public $tail;
+
+    public function __construct() {
+        $this->head = null;
+        $this->tail = null;
+    }
+
+    // Inserting a new node at the beginning of the list
+    public function insertAtBeginning($data) {
+        $newNode = new Node($data);
+        if ($this->head === null) {
+            $this->head = $newNode;
+            $this->tail = $newNode;
+        } else {
+            $newNode->next = $this->head;
+            $this->head->prev = $newNode;
+            $this->head = $newNode;
+        }
+    }
+
+    // Inserting a new node at the end of the list
+    public function insertAtEnd($data) {
+        $newNode = new Node($data);
+        if ($this->tail === null) {
+            $this->head = $newNode;
+            $this->tail = $newNode;
+        } else {
+            $newNode->prev = $this->tail;
+            $this->tail->next = $newNode;
+            $this->tail = $newNode;
+        }
+    }
+
+    // Traversing the list forward and printing its elements
+    public function displayForward() {
+        $current = $this->head;
+        while ($current !== null) {
+            echo $current->data . " ";
+            $current = $current->next;
+        }
+    }
+
+    // Traversing the list backward and printing its elements
+    public function displayBackward() {
+        $current = $this->tail;
+        while ($current !== null) {
+            echo $current->data . " ";
+            $current = $current->prev;
+        }
+    }
+}
+
+// Example usage:
+$doublyLinkedList = new DoublyLinkedList();
+$doublyLinkedList->insertAtBeginning(3);
+$doublyLinkedList->insertAtBeginning(2);
+$doublyLinkedList->insertAtBeginning(1);
+$doublyLinkedList->insertAtEnd(4);
+$doublyLinkedList->insertAtEnd(5);
+
+echo "Forward traversal: ";
+$doublyLinkedList->displayForward(); // Output: 1 2 3 4 5
+echo "\n";
+
+echo "Backward traversal: ";
+$doublyLinkedList->displayBackward(); // Output: 5 4 3 2 1
+
 
