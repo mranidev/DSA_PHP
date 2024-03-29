@@ -283,11 +283,18 @@ $circularLinkedList->display(); // Output: 1 2 3
 
   2. **Insertion at the End**: Adding a new node at the end of the linked list.
   ```php
-  // Insertion at the beginning of the linked list
-  public function insertAtBeginning($data) {
-      $newNode = new Node($data);
-      $newNode->next = $this->head;
-      $this->head = $newNode;
-  }
+    // Insertion at the end of the linked list
+    public function insertAtEnd($data) {
+        $newNode = new Node($data);
+        if ($this->head === null) {
+            $this->head = $newNode;
+            return;
+        }
+        $current = $this->head;
+        while ($current->next !== null) {
+            $current = $current->next;
+        }
+        $current->next = $newNode;
+    }
   ``` 
 
