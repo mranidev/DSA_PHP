@@ -265,5 +265,28 @@ $circularLinkedList->insert(3);
 
 $circularLinkedList->display(); // Output: 1 2 3
 
+ ```
+### Common Operations:
 
+#### Insertion:
+- **Description**: Inserting a new node into the linked list at a specified position or at the beginning/end of the list.
+- **Approaches**:
+  1. **Insertion at the Beginning**: Adding a new node at the beginning of the linked list.
+  ```php
+  // Insertion at the beginning of the linked list
+  public function insertAtBeginning($data) {
+      $newNode = new Node($data);
+      $newNode->next = $this->head;
+      $this->head = $newNode;
+  }
+  ```
+
+  2. **Insertion at the End**: Adding a new node at the end of the linked list.```php
+  // Insertion at the beginning of the linked list
+  public function insertAtBeginning($data) {
+      $newNode = new Node($data);
+      $newNode->next = $this->head;
+      $this->head = $newNode;
+  }
+  ``` 
 
